@@ -1,5 +1,4 @@
 <html>
-<html>
 <head>
     <meta charset="UTF-8">
     <title>STORM BREAKER By Hot Wings</title>
@@ -14,10 +13,32 @@
 </head>
 
 <body>
-    <x3d>
-        <scene>
-            <inline url="stormbreaker.x3d"></inline>
-        </scene>
-    </x3d>
+<x3d>
+<scene>
+
+    <!-- Camera -->
+    <viewpoint position="0 5 20" orientation="1 0 0 -0.2"></viewpoint>
+
+    <!-- Lighting -->
+    <directionallight direction="-1 -1 -1" intensity="1"></directionallight>
+
+    <!-- Sky -->
+    <background skyColor="0.6 0.8 1"></background>
+
+    <!-- Ground -->
+    <transform translation="0 -1 0">
+        <shape>
+            <appearance>
+                <material diffuseColor="0.3 0.6 0.3"></material>
+            </appearance>
+            <box size="200 0.1 200"></box>
+        </shape>
+    </transform>
+
+    <!-- Aircraft model -->
+    <inline url="stormbreaker.x3d"></inline>
+
+</scene>
+</x3d>
 </body>
 </html>
