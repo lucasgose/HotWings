@@ -3,7 +3,7 @@
 <X3D version="3.0" profile="Immersive" xmlns:xsd="http://www.w3.org/2001/XMLSchema-instance" xsd:noNamespaceSchemaLocation="http://www.web3d.org/specifications/x3d-3.0.xsd">
 	<head>
 		<meta name="filename" content="stormbreaker.x3d" />
-		<meta name="created" content="2026-04-28 22:59:38" />
+		<meta name="created" content="2026-04-28 23:12:24" />
 		<meta name="generator" content="Blender 5.0.1" />
 		<meta name="translator" content="Web3D X3D/VRML2 format v2.5.1" />
 	</head>
@@ -80,14 +80,7 @@
 								<ImageTexture DEF="IM_Fuselage_png"
 								              url='"Fuselage.png"'
 								              />
-								<Material DEF="MA_Fuselage_001"
-								          diffuseColor="0.800 0.800 0.800"
-								          specularColor="0.401 0.401 0.401"
-								          emissiveColor="0.000 0.000 0.000"
-								          ambientIntensity="0.000"
-								          shininess="0.500"
-								          transparency="0.000"
-								          />
+								<Material USE="MA_Fuselage_001" />
 							</Appearance>
 							<IndexedTriangleSet solid="false"
 							                    normalPerVertex="true"
@@ -117,14 +110,7 @@
 								<ImageTexture DEF="IM_Left-Wing_png"
 								              url='"Left-Wing.png"'
 								              />
-								<Material DEF="MA_Left_Wing"
-								          diffuseColor="0.800 0.800 0.800"
-								          specularColor="0.401 0.401 0.401"
-								          emissiveColor="0.000 0.000 0.000"
-								          ambientIntensity="0.000"
-								          shininess="0.500"
-								          transparency="0.000"
-								          />
+								<Material USE="MA_Left_Wing" />
 							</Appearance>
 							<IndexedTriangleSet solid="false"
 							                    normalPerVertex="true"
@@ -154,14 +140,7 @@
 								<ImageTexture DEF="IM_Vert-Stab"
 								              url='"Vert-Stab.png"'
 								              />
-								<Material DEF="MA_Vert_Stab_001"
-								          diffuseColor="0.800 0.800 0.800"
-								          specularColor="0.401 0.401 0.401"
-								          emissiveColor="0.000 0.000 0.000"
-								          ambientIntensity="0.000"
-								          shininess="0.500"
-								          transparency="0.000"
-								          />
+								<Material USE="MA_Vert_Stab_001" />
 							</Appearance>
 							<IndexedTriangleSet solid="false"
 							                    normalPerVertex="true"
@@ -214,8 +193,8 @@
 					<Group DEF="group_ME_Cockpit_Window">
 						<Shape>
 							<Appearance>
-								<Material DEF="MA_Window_Updated"
-								          diffuseColor="0.800 0.800 0.800"
+								<Material DEF="MA_Windows"
+								          diffuseColor="0.088 0.391 0.800"
 								          specularColor="0.401 0.401 0.401"
 								          emissiveColor="0.000 0.000 0.000"
 								          ambientIntensity="0.000"
@@ -248,7 +227,7 @@
 					<Group DEF="group_ME_Cockpit_Side_Window">
 						<Shape>
 							<Appearance>
-								<Material USE="MA_Window_Updated" />
+								<Material USE="MA_Windows" />
 							</Appearance>
 							<IndexedTriangleSet solid="false"
 							                    normalPerVertex="true"
@@ -275,7 +254,7 @@
 					<Group DEF="group_ME_Sun_Roof">
 						<Shape>
 							<Appearance>
-								<Material USE="MA_Window_Updated" />
+								<Material USE="MA_Windows" />
 							</Appearance>
 							<IndexedTriangleSet solid="false"
 							                    normalPerVertex="true"
@@ -302,7 +281,7 @@
 					<Group DEF="group_ME_Aft_Window">
 						<Shape>
 							<Appearance>
-								<Material USE="MA_Window_Updated" />
+								<Material USE="MA_Windows" />
 							</Appearance>
 							<IndexedTriangleSet solid="false"
 							                    normalPerVertex="true"
@@ -329,7 +308,7 @@
 					<Group DEF="group_ME_Foward_Window">
 						<Shape>
 							<Appearance>
-								<Material USE="MA_Window_Updated" />
+								<Material USE="MA_Windows" />
 							</Appearance>
 							<IndexedTriangleSet solid="false"
 							                    normalPerVertex="true"
@@ -357,14 +336,7 @@
 						<Shape>
 							<Appearance>
 								<ImageTexture USE="IM_Fuselage_png" />
-								<Material DEF="MA_Fuselage"
-								          diffuseColor="0.800 0.800 0.800"
-								          specularColor="0.401 0.401 0.401"
-								          emissiveColor="0.000 0.000 0.000"
-								          ambientIntensity="0.000"
-								          shininess="0.500"
-								          transparency="0.000"
-								          />
+								<Material USE="MA_Fuselage" />
 							</Appearance>
 							<IndexedTriangleSet solid="false"
 							                    normalPerVertex="true"
@@ -394,14 +366,7 @@
 								<ImageTexture DEF="IM_checkered-texture_png"
 								              url='"checkered-texture.png"'
 								              />
-								<Material DEF="MA_Engine"
-								          diffuseColor="0.800 0.800 0.800"
-								          specularColor="0.401 0.401 0.401"
-								          emissiveColor="0.000 0.000 0.000"
-								          ambientIntensity="0.000"
-								          shininess="0.500"
-								          transparency="0.000"
-								          />
+								<Material USE="MA_Engine" />
 							</Appearance>
 							<IndexedTriangleSet solid="false"
 							                    normalPerVertex="true"
@@ -431,14 +396,7 @@
 								<ImageTexture DEF="IM_Spinner-Design_png"
 								              url='"Spinner-Design.png"'
 								              />
-								<Material DEF="MA_Spinner"
-								          diffuseColor="0.800 0.800 0.800"
-								          specularColor="0.401 0.401 0.401"
-								          emissiveColor="0.000 0.000 0.000"
-								          ambientIntensity="0.000"
-								          shininess="0.500"
-								          transparency="0.000"
-								          />
+								<Material USE="MA_Spinner" />
 							</Appearance>
 							<IndexedTriangleSet solid="false"
 							                    normalPerVertex="true"
@@ -468,7 +426,14 @@
 								<ImageTexture DEF="IM_metal_height_tif"
 								              url='"metal_height.tif"'
 								              />
-								<Material USE="MA_Lightly_soiled_black_metal" />
+								<Material DEF="MA_Lightly_soiled_black_metal"
+								          diffuseColor="0.800 0.800 0.800"
+								          specularColor="0.401 0.401 0.401"
+								          emissiveColor="0.000 0.000 0.000"
+								          ambientIntensity="0.000"
+								          shininess="0.500"
+								          transparency="0.000"
+								          />
 							</Appearance>
 							<IndexedTriangleSet solid="false"
 							                    normalPerVertex="true"
