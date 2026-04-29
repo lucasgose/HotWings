@@ -3,7 +3,7 @@
 <X3D version="3.0" profile="Immersive" xmlns:xsd="http://www.w3.org/2001/XMLSchema-instance" xsd:noNamespaceSchemaLocation="http://www.web3d.org/specifications/x3d-3.0.xsd">
 	<head>
 		<meta name="filename" content="stormbreaker.x3d" />
-		<meta name="created" content="2026-04-28 21:20:13" />
+		<meta name="created" content="2026-04-28 21:28:46" />
 		<meta name="generator" content="Blender 5.0.1" />
 		<meta name="translator" content="Web3D X3D/VRML2 format v2.5.1" />
 	</head>
@@ -80,7 +80,14 @@
 								<ImageTexture DEF="IM_Fuselage_png"
 								              url='"Fuselage.png"'
 								              />
-								<Material USE="MA_Fuselage_001" />
+								<Material DEF="MA_Fuselage_001"
+								          diffuseColor="0.800 0.800 0.800"
+								          specularColor="0.401 0.401 0.401"
+								          emissiveColor="0.000 0.000 0.000"
+								          ambientIntensity="0.000"
+								          shininess="0.500"
+								          transparency="0.000"
+								          />
 							</Appearance>
 							<IndexedTriangleSet solid="false"
 							                    normalPerVertex="true"
