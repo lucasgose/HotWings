@@ -3,7 +3,7 @@
 <X3D version="3.0" profile="Immersive" xmlns:xsd="http://www.w3.org/2001/XMLSchema-instance" xsd:noNamespaceSchemaLocation="http://www.web3d.org/specifications/x3d-3.0.xsd">
 	<head>
 		<meta name="filename" content="stormbreaker.x3d" />
-		<meta name="created" content="2026-04-28 20:53:27" />
+		<meta name="created" content="2026-04-28 21:20:13" />
 		<meta name="generator" content="Blender 5.0.1" />
 		<meta name="translator" content="Web3D X3D/VRML2 format v2.5.1" />
 	</head>
@@ -77,8 +77,8 @@
 					<Group DEF="group_ME_Fuselage">
 						<Shape>
 							<Appearance>
-								<ImageTexture DEF="IM_Matal_solid_paint_white_Base_Color_png"
-								              url='"Matal_solid_paint_white_Base Color.png"'
+								<ImageTexture DEF="IM_Fuselage_png"
+								              url='"Fuselage.png"'
 								              />
 								<Material USE="MA_Fuselage_001" />
 							</Appearance>
@@ -328,9 +328,7 @@
 					<Group DEF="group_ME_Door">
 						<Shape>
 							<Appearance>
-								<ImageTexture DEF="IM_Fuselage_png"
-								              url='"Fuselage.png"'
-								              />
+								<ImageTexture USE="IM_Fuselage_png" />
 								<Material USE="MA_Fuselage" />
 							</Appearance>
 							<IndexedTriangleSet solid="false"
@@ -358,7 +356,6 @@
 					<Group DEF="group_ME_Number_1_-_Engine">
 						<Shape>
 							<Appearance>
-								<ImageTexture USE="IM_Matal_solid_paint_white_Base_Color_png" />
 								<Material USE="MA_Engine" />
 							</Appearance>
 							<IndexedTriangleSet solid="false"
@@ -386,7 +383,9 @@
 					<Group DEF="group_ME_Number_1_-_Hub">
 						<Shape>
 							<Appearance>
-								<ImageTexture USE="IM_Matal_solid_paint_white_Base_Color_png" />
+								<ImageTexture DEF="IM_Spinner-Design_png"
+								              url='"Spinner-Design.png"'
+								              />
 								<Material USE="MA_Spinner" />
 							</Appearance>
 							<IndexedTriangleSet solid="false"
@@ -830,7 +829,7 @@
 					<Group DEF="group_ME_Number_2_-_Spinner">
 						<Shape>
 							<Appearance>
-								<ImageTexture USE="IM_Matal_solid_paint_white_Base_Color_png" />
+								<ImageTexture USE="IM_Spinner-Design_png" />
 								<Material USE="MA_Spinner" />
 							</Appearance>
 							<IndexedTriangleSet solid="false"
