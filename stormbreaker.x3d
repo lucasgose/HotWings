@@ -3,7 +3,7 @@
 <X3D version="3.0" profile="Immersive" xmlns:xsd="http://www.w3.org/2001/XMLSchema-instance" xsd:noNamespaceSchemaLocation="http://www.web3d.org/specifications/x3d-3.0.xsd">
 	<head>
 		<meta name="filename" content="stormbreaker.x3d" />
-		<meta name="created" content="2026-04-28 20:33:03" />
+		<meta name="created" content="2026-04-28 20:53:27" />
 		<meta name="generator" content="Blender 5.0.1" />
 		<meta name="translator" content="Web3D X3D/VRML2 format v2.5.1" />
 	</head>
@@ -13,7 +13,7 @@
 		                type='"EXAMINE", "ANY"'
 		                avatarSize="0.25, 1.75, 0.75"
 		                />
-		<Background DEF="WO_Rock_Ground_Bluesky_Mountain"
+		<Background DEF="WO_Ocean_001"
 		            groundColor="0.050 0.050 0.050"
 		            skyColor="0.050 0.050 0.050"
 		            />
